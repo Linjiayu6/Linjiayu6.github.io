@@ -1,8 +1,8 @@
 {
-  "name": "linjiayu6.github.io",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://linjiayu6.github.io/index",
+  "homepage": "https://linjiayu6.github.io/home",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
