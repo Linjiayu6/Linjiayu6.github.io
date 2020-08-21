@@ -6,6 +6,10 @@ const FE = [
         desc: '[2020] Front-End Notebook',
     },
     {
+        name: 'Flappy Bird',
+        desc: '[2020] flappybird / canvas game',
+    },
+    {
         name: 'Micro-Frontends',
         desc: '[2020] micro frontends/react/vue/single-spa',
     },
