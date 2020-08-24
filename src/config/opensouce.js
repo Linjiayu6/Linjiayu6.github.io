@@ -6,7 +6,7 @@ const FE = [
         desc: '[2020] Front-End Notebook',
     },
     {
-        name: 'Flappy Bird',
+        name: 'FlappyBird',
         desc: '[2020] flappybird / canvas game',
     },
     {
