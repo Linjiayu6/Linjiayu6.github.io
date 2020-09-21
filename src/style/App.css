@@ -2,3 +2,15 @@
   margin: 50px;
   text-align: left;
 }
+
+header {
+  position: relative;
+}
+
+.lotte-container {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -50px;
+  left: 400px;
+}
