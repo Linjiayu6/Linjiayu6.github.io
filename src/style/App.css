@@ -16,8 +16,13 @@ header {
 }
 
 .lottie-animation {
+  position: absolute;
+  width: 600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50px;
   text-align: center;
-  margin-top: 150px;
   animation-duration: 5s;
   animation-name: fade;
 }

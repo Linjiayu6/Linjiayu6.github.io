@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Lottie from 'lottie-react-web'
-import axios from 'axios'
+// import axios from 'axios'
+
+import _lottieJSON from '../config/lottie_start.json';
 
 import Header from '../component/Header'
 import OpenSource from '../component/OpenSource'
@@ -11,23 +13,23 @@ import '../style/App.css'
 
 function App () {
   const [isLoad, setLoading] = useState(true)
-  const [lottieJSON, setLottieJSON] = useState(null)
+  const [lottieJSON, setLottieJSON] = useState(_lottieJSON)
 
-  useEffect(() => {
-    async function fetch () {
-      try {
-        const body = await axios.get('https://assets4.lottiefiles.com/private_files/lf30_P9kQz3.json')
-        if (body && body.data) {
-          setLottieJSON(body && body.data)
-        } else {
-          setLoading(false)
-        }
-      } catch (error) {
-        setLoading(false)
-      }
-    }
-    fetch()
-  }, [])
+  // useEffect(() => {
+  //   async function fetch () {
+  //     try {
+  //       // const body = await axios.get('https://assets4.lottiefiles.com/private_files/lf30_P9kQz3.json')
+  //       if (body && body.data) {
+  //         setLottieJSON(body && body.data)
+  //       } else {
+  //         setLoading(false)
+  //       }
+  //     } catch (error) {
+  //       setLoading(false)
+  //     }
+  //   }
+  //   fetch()
+  // }, [])
 
   const _renderLoad = () => {
     setTimeout(() => {
@@ -35,7 +37,7 @@ function App () {
     }, 2500)
     return (
       <div className="lottie-animation">
-        <h2>LIN.JY</h2>
+        <h2>Animation Loading ....</h2>
         <Lottie title="lottie" options={{ animationData: lottieJSON }} />
       </div>
     )
