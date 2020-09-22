@@ -10,7 +10,7 @@ import axios from 'axios'
  * layers: 图层
  * nm: name
  */
-const Header = () => {
+const Header: React.FC = () => {
   const [lottieJSON, setLottie] = useState(null)
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header>
       <h1>Lin. JY</h1>
-      <p>🤠 An engineer and explorer. Let's improve everything.</p>
+      <p><span role="img" aria-label="l">🤠</span> An engineer and explorer. Let's improve everything.</p>
       {
         lottieJSON && <div className="lotte-container">
           <Lottie 

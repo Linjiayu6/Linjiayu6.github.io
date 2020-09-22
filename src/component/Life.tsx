@@ -1,6 +1,11 @@
 import React from 'react'
 
-const list = [
+interface ITEM {
+    id: number;
+    tags: string[];
+}
+
+const list: ITEM[] = [
     {
         id: 2020,
         tags: ['🇬🇧 UK', 'SHANG HAI@CHINA']
@@ -44,18 +49,20 @@ const list = [
 
 ]
 
-export default function () {
+function Life () {
     return (
-      <main>
-        <h3># SEE THE WORLD 🌎</h3>
-        <ul>
-          {list.map((item, key) => 
-            <li key={key}>
-              <span className="date">{item.id}</span>
-              {item.tags.map(i => <span key={i} className="travel"> / {i}</span>)}
-            </li>
-            )}
-        </ul>
-      </main>
-    )
+        <main>
+          <h3># SEE THE WORLD <span role="img" aria-label="l">🌎</span></h3>
+          <ul>
+            {list.map((item, key) => 
+              <li key={key}>
+                <span className="date">{item.id}</span>
+                {item.tags.map(i => <span key={i} className="travel"> / {i}</span>)}
+              </li>
+              )}
+          </ul>
+        </main>
+      )
 }
+
+export default Life;

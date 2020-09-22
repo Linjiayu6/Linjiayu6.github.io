@@ -1,6 +1,17 @@
-// url: https://github.com/Linjiayu6/${name}
 
-const FE = [
+// url: https://github.com/Linjiayu6/${name}
+export interface IStructure {
+    name: string;
+    desc: string;
+}
+
+export enum IKey {
+    'FE' = 'FE',
+    'AI' = 'AI',
+    'BASIC' = 'BASIC'
+}
+
+const FE: IStructure[] = [
     {
         name: 'FE-Notes',
         desc: '[2020] Front-End Notebook',
@@ -47,7 +58,7 @@ const FE = [
     }
 ]
 
-const BASIC = [
+const BASIC: IStructure[] = [
     {
         name: 'LeetCode',
         desc: '[2019+] CS Fundamentals: Algorithms and Data structures'
@@ -58,7 +69,7 @@ const BASIC = [
     }
 ]
 
-const AI = [
+const AI: IStructure[] = [
     {
         name: 'Deep-Learning',
         desc: '[2020] Deep Learning / Coursera',
@@ -89,4 +100,4 @@ export default {
     FE,
     AI,
     BASIC
-}
+};
