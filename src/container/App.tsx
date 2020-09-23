@@ -37,7 +37,7 @@ function App () {
     }, 2500)
     return (
       <div className="lottie-animation">
-        <h2>Animation Loading ....</h2>
+        <h2>Loading ...</h2>
         <Lottie title="lottie" options={{ animationData: lottieJSON }} />
       </div>
     )
