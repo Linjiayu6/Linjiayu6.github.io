@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Lottie from 'lottie-react-web'
-// import axios from 'axios'
 
-import _lottieJSON from '../config/lottie_start.json';
-
+// import _lottieJSON from '../config/lottie_start.json';
 import Header from '../component/Header'
 import OpenSource from '../component/OpenSource'
 import TechShare from '../component/TechShare'
@@ -12,8 +10,8 @@ import Life from '../component/Life'
 import '../style/App.css'
 
 function App () {
-  const [isLoad, setLoading] = useState(true)
-  const [lottieJSON, setLottieJSON] = useState(_lottieJSON)
+  // const [isLoad, setLoading] = useState(true)
+  // const [lottieJSON, setLottieJSON] = useState(_lottieJSON)
 
   // useEffect(() => {
   //   async function fetch () {
@@ -31,17 +29,17 @@ function App () {
   //   fetch()
   // }, [])
 
-  const _renderLoad = () => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 2500)
-    return (
-      <div className="lottie-animation">
-        <h2>Loading ...</h2>
-        <Lottie title="lottie" options={{ animationData: lottieJSON }} />
-      </div>
-    )
-  }
+  // const _renderLoad = () => {
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 2500)
+  //   return (
+  //     <div className="lottie-animation">
+  //       <h2>Loading ...</h2>
+  //       <Lottie title="lottie" options={{ animationData: lottieJSON }} />
+  //     </div>
+  //   )
+  // }
 
   const _render = () => (
     <div className="App">
@@ -53,6 +51,7 @@ function App () {
     </div>
   )
 
-  return isLoad ? _renderLoad() : _render()
+  return _render()
+  // return isLoad ? _renderLoad() : _render()
 }
 export default App

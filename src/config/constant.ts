@@ -1,8 +1,10 @@
+import { StringLiteral } from "typescript";
 
 // url: https://github.com/Linjiayu6/${name}
 export interface IStructure {
     name: string;
     desc: string;
+    link?: string;
 }
 
 export enum IKey {
@@ -17,12 +19,18 @@ const FE: IStructure[] = [
         desc: '[2020] Front-End Notebook',
     },
     {
+        name: 'FE-RequestIdleCallback-demo',
+        desc: '[2020] RequestIdleCallback / Lottie / Performance / React Fiber Experiment',
+        link: 'https://linjiayu6.github.io/FE-RequestIdleCallback-demo/',
+    },
+    {
         name: 'FlappyBird',
         desc: '[2020] flappybird / canvas game',
+        link: 'https://linjiayu6.github.io/FlappyBird/',
     },
     {
         name: 'Micro-Frontends',
-        desc: '[2020] micro frontends/react/vue/single-spa',
+        desc: '[2020] micro frontends / react / vue / single-spa',
     },
     {
         name: 'FlutterApp',
@@ -30,31 +38,32 @@ const FE: IStructure[] = [
     },
     {
         name: 'RN-APP',
-        desc: '[2019][React Native] This is the code repository for learning RN'
+        desc: '[2019][React Native] This is the code repository for learning RN',
     },
     {
         name: 'D3',
-        desc: '[2019][D3/React] This is the code repository for learning D3'
+        desc: '[2019][D3/React] This is the code repository for learning D3',
+        link: 'https://linjiayu6.github.io/D3/'
     },
     {
         name: 'Redux-Code',
-        desc: '[2018][Redux] This is the code repository for learning Redux'
+        desc: '[2018][Redux] This is the code repository for learning Redux',
     },
     {
         name: 'Koa2-react-boilerplate',
-        desc: '[2017] [Koa/React/Redux/Webpack] Generate a react boilerplate project'
+        desc: '[2017] [Koa/React/Redux/Webpack] Generate a react boilerplate project',
     },
     {
         name: 'React-Redux',
-        desc: '[2017] [React/Redux/Webpack/Node.js] Generate a react boilerplate project'
+        desc: '[2017] [React/Redux/Webpack/Node.js] Generate a react boilerplate project',
     },
     {
         name: 'Webpack',
-        desc: '[2016] [Webpack] Webpack Demo'
+        desc: '[2016] [Webpack] Webpack Demo',
     },
     {
         name: 'HKBU-Webpage',
-        desc: '[2015] [JS] Redesign HKBU Webpage'
+        desc: '[2015] [JS] Redesign HKBU Webpage',
     }
 ]
 
@@ -81,6 +90,7 @@ const AI: IStructure[] = [
     {
         name: 'Tensorflow.js-LinearRegression',
         desc: '[2019] [Tensorflow.js/React] Machine Learning in Front-end development',
+        link: 'https://linjiayu6.github.io/Tensorflow.js-LinearRegression/',
     },
     {
         name: 'DL-BayesTheorem',
