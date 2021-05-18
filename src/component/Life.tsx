@@ -7,6 +7,10 @@ interface ITEM {
 
 const list: ITEM[] = [
     {
+        id: 2021,
+        tags: ['ZHANGJIAJIE@CHINA']
+    },
+    {
         id: 2020,
         tags: ['🇬🇧 UK', 'SHANG HAI@CHINA']
     }, 

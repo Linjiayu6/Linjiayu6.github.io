@@ -1,4 +1,3 @@
-import { StringLiteral } from "typescript";
 
 // url: https://github.com/Linjiayu6/${name}
 export interface IStructure {

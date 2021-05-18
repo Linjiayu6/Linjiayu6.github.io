@@ -1,5 +1,5 @@
 import React from 'react'
-import Lottie from 'lottie-react-web'
+// import Lottie from 'lottie-react-web'
 
 // import _lottieJSON from '../config/lottie_start.json';
 import Header from '../component/Header'
