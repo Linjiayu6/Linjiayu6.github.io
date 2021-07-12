@@ -35,11 +35,12 @@ ul {
 }
 
 ul li {
-  margin: 3px 0;
+  margin: 3px 0 5px 0;
 }
 
 ul li div {
   font-size: 20px;
+  line-height: 24px;
   color: #eee !important;
 }
 
@@ -49,7 +50,9 @@ ul li .name {
 
 ul li .desc {
   font-size: 15px;
+  line-height: 24px;
   color: slategrey;
+  display: block;
 }
 
 .date {

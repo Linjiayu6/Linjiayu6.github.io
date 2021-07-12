@@ -8,7 +8,7 @@ interface ITEM {
 const list: ITEM[] = [
     {
         id: 2021,
-        tags: ['ZHANGJIAJIE@CHINA']
+        tags: ['⛰ ZHANG JIAJIE@CHINA', '🍲 CHONG QING@CHINA']
     },
     {
         id: 2020,

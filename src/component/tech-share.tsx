@@ -1,12 +1,12 @@
 import React from 'react'
 
 const list: string[] = [
-    'Event Loop@linjiayu',
-    'Redux code@linjiayu',
-    'Redux / Koa Middleware@linjiayu',
-    'Sorting Algorithms@linjiayu',
-    'CRC32@linjiayu',
-    'Machine Learning@linjiayu'
+    'Event Loop @Lin.JY',
+    'Redux code @Lin.JY',
+    'Redux / Koa Middleware @Lin.JY',
+    'Sorting Algorithms @Lin.JY',
+    'CRC32 @Lin.JY',
+    'Machine Learning @Lin.JY'
 ]
 const url: string = 'https://github.com/Linjiayu6/Tech-Sharing'
 

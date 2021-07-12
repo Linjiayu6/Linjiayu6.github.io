@@ -20,7 +20,10 @@ class OpenSource extends React.Component<IPROPS, ISTATE> {
   }
 
   redirectToUrl (url?: string) {
-      return url ? <a href={url} style={{ color: '#ccc' }}>demo <span role="img" aria-label="l">🚀</span> </a> : null
+      return url ? 
+        <a href={url} style={{ color: '#ccc', fontSize: '16px' }}>
+          DEMO <span role="img" aria-label="l">🚀 </span>
+        </a> : null
   }
 
   renderConfig ({ title, name }: 

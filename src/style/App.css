@@ -1,6 +1,8 @@
 .App {
   margin: 50px;
   text-align: left;
+  transform-origin: center top;
+  height: 100px;
 }
 
 header {
